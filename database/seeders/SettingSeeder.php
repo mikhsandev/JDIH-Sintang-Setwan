@@ -16,17 +16,17 @@ class SettingSeeder extends Seeder
     public function run()
     {
         $settings = [
-            'appName'       => 'JDIH CMS',
+            'appName'       => 'JDIH Kabupaten Sintang',
             'appDesc'       => 'Jaringan Dokumentasi dan Informasi Hukum',
             'appLogo'       => asset('assets/admin/images/logo_icon.svg'),
             'appUrl'        => url()->current(),
-            'company'       => 'Balemedia',
-            'companyUrl'    => 'https://balemedia.id',
+            'company'       => 'Pemerintah Kabupaten Sintang',
+            'companyUrl'    => 'https://sintang.go.id',
             'address'       => fake()->streetAddress(),
-            'city'          => fake()->city(),
+            'city'          => 'Kabupaten Sintang',
             'district'      => fake()->city(),
             'regency'       => fake()->city(),
-            'province'      => 'Bali',
+            'province'      => 'Kalimantan Barat',
             'zip'           => fake()->postcode(),
             'phone'         => fake()->phoneNumber(),
             'fax'           => null,
