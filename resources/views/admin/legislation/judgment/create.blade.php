@@ -20,7 +20,7 @@
 
                     <div class="card card-body">
                         <div class="alert alert-info border-0">
-                            Penjelasan dan pedoman tata cara penulisan metadata putusan dapat dilihat pada <a href="https://jdih.baliprov.go.id/produk-hukum/peraturan-perundang-undangan/permenkumham/24804">Peraturan Menteri Hukum dan Hak Asasi Manusia Nomor 8 Tahun 2019 tentang Standar Pengelolaan Dokumen dan Informasi Hukum</a>.
+                            Penjelasan dan pedoman tata cara penulisan metadata putusan dapat dilihat pada <a href="https://jdih.sintang.go.id/produk-hukum/peraturan-perundang-undangan/permenkumham/24804">Peraturan Menteri Hukum dan Hak Asasi Manusia Nomor 8 Tahun 2019 tentang Standar Pengelolaan Dokumen dan Informasi Hukum</a>.
                         </div>
 
                         <div class="row">

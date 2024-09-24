@@ -103,7 +103,7 @@
                                     @csrf
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Nama:</label>
-                                        <input id="name" type="text" class="form-control @if ($errors->get('name') OR $errors->get('slug')) is-invalid @endif" name="name" value="{{ old('name') }}" placeholder="Biro Hukum Setda Provinsi Bali">
+                                        <input id="name" type="text" class="form-control @if ($errors->get('name') OR $errors->get('slug')) is-invalid @endif" name="name" value="{{ old('name') }}" placeholder="Bagian Hukum Setda Kabupaten Sintang">
                                         @if ($errors->get('name') OR $errors->get('slug'))
                                             <ul class="invalid-feedback list-unstyled">
                                                 @foreach ($errors->get('name') as $error)

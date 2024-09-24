@@ -14,10 +14,10 @@
                 </div>
                 <div class="col-12 col-md-9 text-light">
                     <h2 class="mb-3 text-handwriting">Sekapur Sirih</h2>
-                    <p class="fs-lg">Situs ini merupakan situs resmi Biro Hukum Setda Provinsi Bali. Situs ini memuat data dan informasi-informasi produk hukum baik produk hukum pusat maupun daerah. Disamping itu, situs ini memuat pula informasi mengenai buku-buku referensi tentang hukum yang dimiliki oleh Biro Hukum Provinsi Bali.<br></p>
+                    <p class="fs-lg">Situs ini merupakan situs resmi Bagian Hukum Setda Kabupaten Sintang. Situs ini memuat data dan informasi-informasi produk hukum baik produk hukum pusat maupun daerah. Disamping itu, situs ini memuat pula informasi mengenai buku-buku referensi tentang hukum yang dimiliki oleh Bagian Hukum Setda Kabupaten Sintang.<br></p>
                     <div class="author mt-4">
-                        <span class="fw-semibold">IDA BAGUS GEDE SUDARSANA, SH</span><br>
-                        <span class="text-light fs-sm">Kepala Biro  Hukum</span>
+                        <span class="fw-semibold">HARTATI, SH,MH</span><br>
+                        <span class="text-light fs-sm">Kepala Bagian Hukum</span>
                     </div>
                 </div>
             </div>
@@ -372,7 +372,7 @@
     <div class="container py-5">
         <div class="content-wrapper">
             <div class="content py-4">
-                <h2 class="fw-bold section-title text-center mb-4 pb-2">Produk Hukum anggota JDIH Provinsi Bali</h2>
+                <h2 class="fw-bold section-title text-center mb-4 pb-2">Produk Hukum anggota JDIH Kabupaten Sintang</h2>
                 <div class="row gx-4">
                     @foreach ($latestLaws as $law)
                         <div class="col-xl-4 my-3">
@@ -381,7 +381,7 @@
                                     <div class="card-header border-0 pb-0">
                                         <div class="d-flex mb-2">
                                             <img src="{{ asset('assets/admin/images/demo/logos/1.svg') }}" alt="" srcset="" height="32" class="me-2">
-                                            <h5 class="fw-bold">JDIH Kota Denpasar</h5>
+                                            <h5 class="fw-bold">JDIH Kabupaten Sintang</h5>
                                         </div>
                                         <h4 class="fw-bold mb-0">{{ $law->shortTitle }}</h4>
                                     </div>
@@ -540,48 +540,18 @@
                     </div>
                 @endif
 
-                <h2 class="fw-bold section-title text-center mb-4 pb-2">Aplikasi Terkait JDIH</h2>
+                <h2 class="fw-bold section-title text-center mb-4 pb-2">Aplikasi/Web Terkait JDIH</h2>
                 <div class="row gx-5">
 
                     <div class="col-xl-4">
                         <div class="card h-100 card-body shadow lift pb-0" style="min-height: 135px; background-image: url({{ asset('assets/jdih/images/backgrounds/panel_bg.png') }})">
-                            <a href="https://sipekenseni.baliprov.go.id" class="text-body">
+                            <a href="https://sintang.go.id" class="text-body">
                                 <div class="d-flex align-items-center">
                                     <i class="ph-newspaper ph-3x text-danger me-3"></i>
 
                                     <div class="flex-fill text-end">
-                                        <h3 class="mb-0 fw-bold">SI PEKEN SENI</h3>
-                                        <span class="d-block fs-lg">Sistem Penyusunan Keputusan Gubernur Secara Elektronik</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4">
-                        <div class="card h-100 card-body shadow lift pb-0" style="min-height: 135px; background-image: url({{ asset('assets/jdih/images/backgrounds/panel_bg.png') }})">
-                            <a href="https://fasperkadabkum.com" class="text-body">
-                                <div class="d-flex align-items-center">
-                                    <i class="ph-paper-plane-tilt ph-3x text-indigo me-3"></i>
-
-                                    <div class="flex-fill text-end">
-                                        <h3 class="mb-0 fw-bold">SI PENYU DEWI GITA</h3>
-                                        <span class="d-block fs-lg">Sistem Penyusunan Produk Hukum Daerah Berbasis Wilayah Dengan Digitalisasi</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4">
-                        <div class="card h-100 card-body shadow lift pb-0" style="min-height: 135px; background-image: url({{ asset('assets/jdih/images/backgrounds/panel_bg.png') }})">
-                            <a href="https://kliknphdbirohukum.website" class="text-body">
-                                <div class="d-flex align-items-center">
-                                    <i class="ph-hand-pointing ph-3x text-success me-3"></i>
-
-                                    <div class="flex-fill text-end">
-                                        <h3 class="mb-0 fw-bold">KLIK NPHD</h3>
-                                        <span class="d-block fs-lg">Sistem Penyusunan Naskah Perjanjian Hibah Daerah</span>
+                                        <h3 class="mb-0 fw-bold">KAB. SINTANG</h3>
+                                        <span class="d-block fs-lg">Website Resmi Pemerintah Kabupaten Sintang</span>
                                     </div>
                                 </div>
                             </a>
@@ -651,13 +621,15 @@
                     </div>
 
                     <div id="banner-slider" class="row gx-5">
+                        {{-- 
                         @foreach ($banners as $banner)
                             <div class="col-xl-3">
                                 <div class="card">
                                     <a href="{{ $banner->url }}"><img class="rounded img-fluid" src="{{ $banner->image->source }}" alt="" srcset=""></a>
                                 </div>
                             </div>
-                        @endforeach
+                        @endforeach 
+                        --}}
                     </div>
                 </div>
             </div>

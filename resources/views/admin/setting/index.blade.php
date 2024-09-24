@@ -76,7 +76,7 @@
                                     <label class="col-lg-3 col-form-label">Kode Wilayah:</label>
                                     <div class="col-lg-9">
                                         <input id="region_code" type="number" name="region_code" class="form-control @error('region_code') is-invalid @enderror" value="{{ $settings['region_code'] }}">
-                                        <span class="form-text text-muted">Kode wilayah dapat dilihat pada <a href="https://jdih.baliprov.go.id/produk-hukum/peraturan-perundang-undangan/permenkumham/24804">Peraturan Menteri Hukum dan Hak Asasi Manusia Nomor 8 Tahun 2019 tentang Standar Pengelolaan Dokumen dan Informasi Hukum</a>.</span>
+                                        <span class="form-text text-muted">Kode wilayah dapat dilihat pada <a href="https://jdih.sintang.go.id/produk-hukum/peraturan-perundang-undangan/permenkumham/24804">Peraturan Menteri Hukum dan Hak Asasi Manusia Nomor 8 Tahun 2019 tentang Standar Pengelolaan Dokumen dan Informasi Hukum</a>.</span>
                                         @error('region_code')
                                             <div class="invalid-feedback">{{ $message }}</div>
                                         @enderror

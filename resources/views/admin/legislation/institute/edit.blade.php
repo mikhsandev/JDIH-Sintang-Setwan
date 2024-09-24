@@ -9,11 +9,11 @@
     <div class="modal-body">
         <div class="mb-3">
             <label for="name" class="form-label">Nama</label>
-            <input type="text" class="form-control" name="name" id="name" value="{{ $institute->name }}" placeholder="Biro Hukum Setda Provinsi Bali">
+            <input type="text" class="form-control" name="name" id="name" value="{{ $institute->name }}" placeholder="Bagian Hukum Setda Kabupaten Sintang">
         </div>
         <div class="mb-3">
             <label for="abbrev" class="form-label">Singkatan</label>
-            <input type="text" class="form-control" name="abbrev" id="abbrev" value="{{ $institute->abbrev }}" placeholder="BIRO HUKUM">
+            <input type="text" class="form-control" name="abbrev" id="abbrev" value="{{ $institute->abbrev }}" placeholder="BAGIAN HUKUM">
         </div>
         <div class="mb-3">
             <label for="code" class="form-label">Kode</label>
