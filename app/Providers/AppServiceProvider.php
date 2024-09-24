@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Enums\LegislationRelationshipType;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
 use Illuminate\Support\Collection;
@@ -31,5 +32,9 @@ class AppServiceProvider extends ServiceProvider
                 return $value->type->value == $type;
             });
         });
+
+        if ($this->app->environment('production')) {
+            URL::forceScheme('https');
+        }
     }
 }
