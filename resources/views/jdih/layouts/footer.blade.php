@@ -9,7 +9,11 @@
                             <img src="{{ $appLogoUrl }}" alt="{{ $appName }}" class="me-3" height="58">
                             <h4 class="fw-bold mb-0">{!! $appName !!}</h4>
                         </div>
-                        {!! $welcome->excerpt !!}
+                        @isset($welcome->excerpt)
+                            {!! $welcome->excerpt !!}
+                        @else
+                            <p>Jaringan Dokumentasi Informasi Hukum (JDIH) Pemerintah Kabupaten Sintang</p>
+                        @endisset
                     </div>
                     <div class="col-lg-2">
                         <h4 class="fw-bold">Navigasi</h4>
@@ -207,7 +211,7 @@
                             <div class="row mb-3">
                                 <div class="col">
                                     <label for="author" class="d-block form-label">T.E.U. Orang / Badan</label>
-                                    <input type="text" name="author" id="author" class="form-control" placeholder="Contoh: Bali">
+                                    <input type="text" name="author" id="author" class="form-control" placeholder="Contoh: Sintang">
                                 </div>
                                 <div class="col">
                                     <label for="subject" class="form-label">Subjek</label>

@@ -1,7 +1,7 @@
 <div class="card-body">
 
     <div class="alert alert-info border-0">
-        Penjelasan dan pedoman tata cara penulisan metadata peraturan dapat dilihat pada <a href="https://jdih.baliprov.go.id/produk-hukum/peraturan-perundang-undangan/permenkumham/24804">Peraturan Menteri Hukum dan Hak Asasi Manusia Nomor 8 Tahun 2019 tentang Standar Pengelolaan Dokumen dan Informasi Hukum</a>.
+        Penjelasan dan pedoman tata cara penulisan metadata peraturan dapat dilihat pada <a href="https://jdih.sintang.go.id/produk-hukum/peraturan-perundang-undangan/permenkumham/24804">Peraturan Menteri Hukum dan Hak Asasi Manusia Nomor 8 Tahun 2019 tentang Standar Pengelolaan Dokumen dan Informasi Hukum</a>.
     </div>
 
     <div class="row">
@@ -23,7 +23,7 @@
             <div class="mb-3">
                 <label class="col-form-label" for="title">Judul:</label>
                 <textarea name="title" id="title" rows="4" spellcheck="false" class="form-control @if ($errors->get('title') OR $errors->get('slug')) is-invalid @endif">{{ old('title', empty($law) ? null : $law->title) }}</textarea>
-                <div class="form-text text-muted">Format penulisan: judul ditulis lengkap. Huruf kapital hanya di tahap awal kata. Contoh: Peraturan Gubernur Bali Nomor 39 Tahun 2022 Tentang Sistem Dan Prosedur Pengelolaan Keuangan Daerah.</div>
+                <div class="form-text text-muted">Format penulisan: judul ditulis lengkap. Huruf kapital hanya di tahap awal kata. Contoh: Peraturan Bupati Sintang Nomor 112 Tahun 2023 Tentang Standar Biaya Perjalanan Dinas.</div>
                 @if ($errors->get('title') OR $errors->get('slug'))
                     <ul class="invalid-feedback list-unstyled">
                         @foreach ($errors->get('title') as $error)
@@ -90,7 +90,7 @@
             <div class="mb-3">
                 <label for="author" class="col-lg-3 col-form-label">T.E.U. Badan</label>
                 <input type="text" name="author" id="author" class="form-control @error('author') is-invalid @enderror" value="{{ old('author', empty($law) ? null : $law->author) }}">
-                <div class="form-text text-muted">Tajuk Entri Utama (T.E.U.) adalah lembaga yang bertanggung jawab atas isi peraturan. Contoh: Bali (Provinsi).</div>
+                <div class="form-text text-muted">Tajuk Entri Utama (T.E.U.) adalah lembaga yang bertanggung jawab atas isi peraturan. Contoh: Sintang (Kabupaten).</div>
                 @error('author')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @endif
@@ -99,7 +99,7 @@
             <div class="mb-3">
                 <label for="source" class="col-form-label">Sumber</label>
                 <input type="text" name="source" id="source" class="form-control @error('source') is-invalid @enderror" value="{{ old('source', empty($law) ? null : $law->source) }}">
-                <div class="form-text text-muted">Format penulisan: Singkatan Lembar Daerah - Tahun - (Nomor Lembar Daerah) : jumlah Hlm. Contoh: BD PROVINSI BALI 2022 (40) : 10 Hlm.</div>
+                <div class="form-text text-muted">Format penulisan: Singkatan Lembar Daerah - Tahun - (Nomor Lembar Daerah) : jumlah Hlm. Contoh: BD KABUPATEN SINTANG (40) : 10 Hlm.</div>
                 @error('source')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @endif
@@ -108,7 +108,7 @@
             <div class="mb-3">
                 <label for="place" class="col-form-label">Tempat Terbit</label>
                 <input type="text" name="place" id="place" class="form-control @error('place') is-invalid @enderror" value="{{ old('place', empty($law) ? null : $law->place) }}">
-                <div class="form-text text-muted">Tempat ditetapkan peraturan, biasanya tercantum di bagian penutup. Contoh: Bali.</div>
+                <div class="form-text text-muted">Tempat ditetapkan peraturan, biasanya tercantum di bagian penutup. Contoh: Sintang.</div>
                 @error('place')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @endif
@@ -167,7 +167,7 @@
             <div class="mb-3">
                 <label for="location" class="col-form-label">Lokasi</label>
                 <input type="text" name="location" id="location" class="form-control @error('location') is-invalid @enderror" value="{{ old('location', empty($law) ? null : $law->location) }}">
-                <div class="form-text text-muted">Tempat fisik peraturan disimpan. Contoh: Biro Hukum Provinsi Bali.</div>
+                <div class="form-text text-muted">Tempat fisik peraturan disimpan. Contoh: Bagian Hukum Setda Kabupaten Sintang.</div>
                 @error('location')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @endif
@@ -195,7 +195,7 @@
                             @endif
                     </select>
                 </div>
-                <div class="form-text text-muted">Berdasarkan <a href="https://jdih.baliprov.go.id/produk-hukum/peraturan-perundang-undangan/pp/13250">Peraturan Pemerintah Nomor 38 Tahun 2007</a>. Contoh: Pemberdayaan Perempuan dan Perlindungan Anak.
+                <div class="form-text text-muted">Berdasarkan <a href="https://jdih.sintang.go.id/produk-hukum/peraturan-perundang-undangan/pp/13250">Peraturan Pemerintah Nomor 38 Tahun 2007</a>. Contoh: Pemberdayaan Perempuan dan Perlindungan Anak.
                     @cannot('isAuthor')
                         <a href="#" data-bs-toggle="modal" data-bs-target="#create-matter-modal">+ Tambah Urusan Pemerintahan</a>
                     @endcannot
@@ -208,7 +208,7 @@
             <div class="mb-3">
                 <label for="signer" class="col-form-label">Penandatangan</label>
                 <input type="text" name="signer" id="signer" class="form-control @error('signer') is-invalid @enderror" value="{{ old('signer', empty($law) ? null : $law->signer) }}">
-                <div class="form-text text-muted">Format penulisan: nama pejabat tanpa gelar dan jabatan. Contoh: Wayan Koster.</div>
+                <div class="form-text text-muted">Format penulisan: nama pejabat tanpa gelar dan jabatan. Contoh: Kartiyus.</div>
                 @error('signer')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @endif
@@ -224,7 +224,7 @@
                         @endforeach
                     </select>
                 </div>
-                <div class="form-text text-muted">Instansi yang memprakarsai peraturan. Contoh: Biro Hukum Provinsi Bali.
+                <div class="form-text text-muted">Instansi yang memprakarsai peraturan. Contoh: Bagian Hukum Setda Kabupaten Sintang.
                     @cannot('isAuthor')
                         <a href="#" data-bs-toggle="modal" data-bs-target="#create-institute-modal">+ Tambah Pemrakarsa</a>
                     @endcannot
