@@ -47,6 +47,7 @@ class HomepageController extends JdihController
         $totalJudgments	  = Legislation::ofType(4)->published()->count();
 
         $popularLaw = Legislation::ofType(1)->popular()->first();
+        $popularLawDoc = null;
         if ($popularLaw != null) {
             $popularLawDoc = $popularLaw->documents()
                 ->ofType('master')
