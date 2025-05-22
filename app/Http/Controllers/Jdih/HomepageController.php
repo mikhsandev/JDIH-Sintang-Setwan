@@ -67,9 +67,12 @@ class HomepageController extends JdihController
             ->latest()
             ->first();
 
-        $cover = $monograph->documents()
-            ->ofType('cover')
-            ->first();
+        $cover = null;
+        if ($monograph != null) {
+            $cover = $monograph->documents()
+                ->ofType('cover')
+                ->first();
+        }
 
         $latestNews = Post::ofType('news')->with('taxonomy', 'author', 'cover')
             ->published()
