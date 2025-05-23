@@ -98,7 +98,7 @@
                                     <div class="mb-3">
                                         <label for="master" class="col-form-label">Batang Tubuh</label>
                                         <input type="file" class="form-control @error('master') is-invalid @enderror" name="master" accept=".pdf">
-                                        <div class="form-text text-muted">Format: pdf. Ukuran maks: 2Mb.</div>
+                                        <div class="form-text text-muted">Format: pdf. Ukuran maks: 100Mb.</div>
                                         @error('master')
                                             <div class="invalid-feedback">{{ $message }}</div>
                                         @enderror
@@ -109,7 +109,7 @@
                                     <div class="mb-3">
                                         <label for="abstract" class="col-form-label">Abstrak</label>
                                         <input type="file" class="form-control @error('abstract') is-invalid @enderror" name="abstract" accept=".pdf">
-                                        <div class="form-text text-muted">Format: pdf. Ukuran maks: 2Mb.</div>
+                                        <div class="form-text text-muted">Format: pdf. Ukuran maks: 20Mb.</div>
                                         @error('abstract')
                                             <div class="invalid-feedback">{{ $message }}</div>
                                         @enderror

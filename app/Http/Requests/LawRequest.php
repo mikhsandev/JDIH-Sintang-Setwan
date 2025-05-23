@@ -48,7 +48,7 @@ class LawRequest extends FormRequest
             'location'    => 'nullable',
             'published_at'=> 'nullable',
             'note'        => 'nullable|string',
-            'master'      => 'nullable|file|mimes:pdf|max:20000',
+            'master'      => 'nullable|file|mimes:pdf|max:100000',
             'abstract'    => 'nullable|file|mimes:pdf|max:20000',
             'attachment'  => 'nullable|array',
             'attachment.*'  => 'sometimes|file|mimes:pdf,doc,docx,xls,xlsx,ppt,pptx,zip,rar,rtf,txt|max:20000'
