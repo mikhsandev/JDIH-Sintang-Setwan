@@ -14,7 +14,7 @@
                 </div>
                 <div class="col-12 col-md-9 text-light">
                     <h2 class="mb-3 text-handwriting">Sekapur Sirih</h2>
-                    <p class="fs-lg">Situs ini merupakan situs resmi Bagian Hukum Setda Kabupaten Sintang. Situs ini memuat data dan informasi-informasi produk hukum baik produk hukum pusat maupun daerah. Disamping itu, situs ini memuat pula informasi mengenai buku-buku referensi tentang hukum yang dimiliki oleh Bagian Hukum Setda Kabupaten Sintang.<br></p>
+                    <p class="fs-lg">Situs ini merupakan situs resmi Bagian Hukum Setwan Kabupaten Sintang. Situs ini memuat data dan informasi-informasi produk hukum baik produk hukum pusat maupun daerah. Disamping itu, situs ini memuat pula informasi mengenai buku-buku referensi tentang hukum yang dimiliki oleh Bagian Hukum Setwan Kabupaten Sintang.<br></p>
                     <div class="author mt-4">
                         <span class="fw-semibold">HARTATI, SH,MH</span><br>
                         <span class="text-light fs-sm">Kepala Bagian Hukum</span>
