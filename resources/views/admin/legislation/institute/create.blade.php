@@ -12,7 +12,7 @@
                 <div class="modal-body">
                     <div class="mb-0">
                         <label for="name" class="form-label">Nama</label>
-                        <input id="name" type="text" class="form-control" name="name" placeholder="Bagian Hukum Setda Kabupaten Sintang">
+                        <input id="name" type="text" class="form-control" name="name" placeholder="Bagian Hukum Setwan Kabupaten Sintang">
                     </div>
                 </div>
                 <div class="modal-footer border-top-0 pt-0">

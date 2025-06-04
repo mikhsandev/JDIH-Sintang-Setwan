@@ -158,7 +158,7 @@
                                 <div class="mb-3">
                                     <label for="location" class="col-form-label">Lokasi</label>
                                     <input type="text" name="location" id="location" class="form-control @error('location') is-invalid @enderror" value="{{ $monograph->location }}">
-                                    <div class="form-text text-muted">Tempat fisik monografi disimpan. Contoh: Bagian Hukum Setda Kabupaten Sintang.</div>
+                                    <div class="form-text text-muted">Tempat fisik monografi disimpan. Contoh: Bagian Hukum Setwan Kabupaten Sintang.</div>
                                     @error('location')
                                         <div class="invalid-feedback">{{ $message }}</div>
                                     @enderror

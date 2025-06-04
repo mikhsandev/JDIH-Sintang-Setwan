@@ -9,7 +9,7 @@
     <div class="modal-body">
         <div class="mb-3">
             <label for="name" class="form-label">Nama</label>
-            <input type="text" class="form-control" name="name" id="name" value="{{ $institute->name }}" placeholder="Bagian Hukum Setda Kabupaten Sintang">
+            <input type="text" class="form-control" name="name" id="name" value="{{ $institute->name }}" placeholder="Bagian Hukum Setwan Kabupaten Sintang">
         </div>
         <div class="mb-3">
             <label for="abbrev" class="form-label">Singkatan</label>
